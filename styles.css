@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+
+:root{
+ 
+    --lite-purple: #f2ecfd;
+    --purple: #61399f;
+    --purple-block: #41246e;
+    --font-inter: "Inter",sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--lite-purple);
+    font-family: var(--font-inter);
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+nav{
+    background-color: var(--purple);
+    height: 10dvh;
+
+}
+
+nav h1{
+    margin: 0;
+    margin-left: 15%;
+    color: white;
+    padding-top: 1.4rem;
+    padding-bottom: 0;
+    font-size: 30px;
+    font-style: italic;
+}
+
+main{
+    flex-grow: 1;
+}
+.content{
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    
+}
+.left{
+    max-width: 60%;
+    text-align:justify;
+   
+}
+
+.left h1{
+    font-size: 40px;
+    font-style: italic;
+}
+
+.right{
+    max-width: 30%;
+
+}
+
+label{
+    display:block;
+    padding-block: 1rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    cursor: pointer;
+    
+}
+
+input{
+    height: 5dvh;
+    border-radius: 15px;
+    width: 40dvh;
+    transition: all .3s;
+    padding: .2rem;
+    text-align: center;
+    font-style: italic;
+    cursor: pointer;
+
+}
+input:hover{
+    transform: scale(1.1);
+}
+
+#btn{
+    display: block;
+    margin-inline:auto;
+    background-color: var(--purple);
+    color:white;
+    padding: .5rem;
+    border-radius: 15px;
+    font-weight: bold;
+    font-family: inherit;
+    box-shadow: 0 1rem 1rem -.5rem rgba(0, 0, 0, .4);
+    transition: all .3s;
+    cursor: pointer;
+
+}
+
+#btn:hover{
+    transform: scale(1.2);
+}
+
+#img{
+   
+    width: 100%;
+    margin-top: 10dvh;
+}
+   
+#output-div{
+    display: none;
+    border:1px solid black;
+    padding:.7rem;
+    margin-top: 1em;
+    text-align: center;
+    background-color: var(--purple);
+    font-weight: bold;
+    max-width: 350px;
+    max-height: 50px;
+    border-radius: 5px;
+    box-shadow: 0 1rem 1rem -.5rem rgba(0, 0, 0, .4);
+}
+
+footer{
+    margin:auto;
+    
+}
+
+footer h3{
+    font-weight:normal;
+    font-family: inherit;
+    font-size: small;
+}
+
+.icons{
+    margin:1em 0em;
+    font-size: small;
+}
+
+
+.icons a{
+    color:var(--purple);
+    margin-right: .5em;
+    
+    
+}
+
+.icons i{
+    transition: all 0.3s;
+    
+}
+.icons i:hover{
+    transform: scale(1.2);
+}
